@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     })
-    if (window.location.pathname.includes("index.html")) {
+    if (window.location.pathname === "/" || window.location.pathname.endsWith("index.html")) {
       document.getElementById("start").addEventListener("click", function() {
         transition()
       });
