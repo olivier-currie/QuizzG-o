@@ -162,7 +162,7 @@ class ImageInput extends InputQuestion {
     return `<div>
                 <p class="questiontext">${this.text}</p>
                 <div class="imagecontour">
-                    <img src=${this.image} width="350" height="200" style="margin-top: 10px;">
+                    <img src=${this.image} style="margin-top: 10px; width: 20.6vw; height: 21.25vh;">
                 </div>
                 <p></p>
                 <input type="text" class="inputbar" id="answerId" />
@@ -486,10 +486,7 @@ function setImages(token) {
 }
 
 
-// 1 give credit for the images (unsplash, pixabay, pexels, wikimedia), flags (flagpedia.net) & info (wikipedia) in footer and about
-// 2 minor adjustments margins + format aboutpage & contactpage
-// 3 make two separate folders projets info
-// 4 github repo -> render.com
+// adjust css using clamp() for sizes
 
 let startTime = null;
 let endTime = null;
