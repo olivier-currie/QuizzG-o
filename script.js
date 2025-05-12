@@ -5,7 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.text())
     .then(data => {
       document.getElementById("navbar").innerHTML = data;
-
+      if (window.location.pathname.includes("index.html")) {
+        document.getElementById("start").addEventListener("click", function() {
+          transition()
+        });
+      }
       document.addEventListener("click", (event) => {
         if (!document.getElementById("sidemenu").contains(event.target) && !document.getElementById("hamburger").contains(event.target)) {
           document.getElementById("sidemenu").classList.remove("open");
@@ -22,11 +26,7 @@ function togglemenu() {
   var sidemenu = document.getElementById("sidemenu");
   sidemenu.classList.toggle('open');
 }
-if (window.location.pathname.includes("index.html")) {
-  document.getElementById("start").addEventListener("click", function() {
-    transition()
-  });
-}
+
 
 
 
