@@ -5,17 +5,17 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.text())
     .then(data => {
       document.getElementById("navbar").innerHTML = data;
-      if (window.location.pathname.includes("index.html")) {
-        document.getElementById("start").addEventListener("click", function() {
-          transition()
-        });
-      }
       document.addEventListener("click", (event) => {
         if (!document.getElementById("sidemenu").contains(event.target) && !document.getElementById("hamburger").contains(event.target)) {
           document.getElementById("sidemenu").classList.remove("open");
         }
       });
-    })});
+    })
+    if (window.location.pathname.includes("index.html")) {
+      document.getElementById("start").addEventListener("click", function() {
+        transition()
+      });
+    }});
 
 function transition() {
   document.getElementById("startscreen").style.display = "none";
