@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 20px;
+  padding: 1.18vw;
   margin: 0;
   background-size: cover;
   background-position: center;
@@ -18,29 +18,29 @@ body {
 h1 {
   font-size: 2.5em;
   text-shadow: 2px 2px 4px black;
-  margin-top: 80px;
+  margin-top: 8.5vh;
 }
 #startbutton, #continents{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 15.94vh;
 }
 #startbutton {
-  margin-bottom: 80px;
+  margin-bottom: 8.5vh;
 }
 .quizbutton {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 250px;
+  margin-left: 14.71vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 100px;
+  width: 17.66vw;
+  height: 10.63vh;
   font-size: 25px;
   text-shadow: 2px 2px 8px black;
 }
@@ -52,7 +52,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 300px;
+  margin-left: 17.66vw;
   background-color: rgb(68, 127, 228);
 }
 .submitbutton:hover, .accueilbutton:hover{
@@ -60,32 +60,32 @@ h1 {
   transform: scale(1.1);
 }
 #startbutton button, #continents button, .quizbutton, .submitbutton, .accueilbutton {
-  padding: 20px 0px;
+  padding: 2.125vh 0vw;
   border: none;
-  border-radius: 10px;
+  border-radius: 1.06vh;
   color: white;
   cursor: pointer;
   transition: background-color 0.3 ease;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 2.125vh;
 }
 .submitbutton, .accueilbutton {
-  width: 200px;
+  width: 11.77vw;
   font-size: 18px;
 }
 #continents button {
-  width: 200px;
-  height: 70px;
+  width: 11.77vw;
+  height: 7.44vh;
   font-size: 19px;
-  margin-bottom: 50px;
+  margin-bottom: 5.313vh;
   text-shadow: 2px 2px 8px black;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 #startbutton button {
-  width: 175px;
-  height: 100px;
+  width: 10.3vw;
+  height: 10.6vh;
   font-size: 20px;
 }
 #europebutton {
@@ -108,7 +108,7 @@ h1 {
   transform: scale(1.15);
 }
 .nextbutton {
-  padding: 15px 32px;
+  padding: 1.594vh 1.883vw;
   font-size: 27px;
   font-weight: bold;
   color: white;
@@ -131,7 +131,7 @@ h1 {
 .europepage, .africapage, .asiapage {
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 20px;
+  padding: 2.125vh;
   margin: 0;
   background-size: cover;
   background-position: center;
@@ -147,8 +147,8 @@ h1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 15px;
-  border-radius: 10px;
+  padding: 1.594vh;
+  border-radius: 1.06vh;
   width: 50%;
   height: 135%;
   position: relative;
@@ -158,7 +158,7 @@ h1 {
   display: flex;
   justify-content: center;
   background-color: rgb(51, 51, 51);
-  padding: 12px;
+  padding: 1.275vh;
   position: fixed;
   width: 100%;
   top: 0;
@@ -168,7 +168,7 @@ h1 {
 #navbar a {
   color: white;
   text-decoration: none;
-  padding: 16px 22px;
+  padding: 1.7vh 1.295vw;
   text-align: center;
   font-size: 18px;
   transition: background-color 0.3s color 0.3s;
@@ -182,17 +182,17 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 30px;
-  height: 24px;
+  width: 1.765vw;
+  height: 2.55vh;
   cursor: pointer;
   margin-right: 78%;
-  margin-top: 15px;
+  margin-top: 1.594vh;
 }
 #hamburger:hover .bar {
   transform: scaleX(0.7);
 }
 .bar {
-  width: 30px;
+  width: 1.766vw;
   height: 4px;
   background-color: white;
   border-radius: 5px;
@@ -202,22 +202,22 @@ h1 {
   flex-direction: column;
   position: fixed;
   top: 0;
-  left: -250px;
-  width: 250px;
+  left: -14.71vw;
+  width: 14.71vw;
   height: 100%;
   background-color: black;
-  padding-top: 60px;
+  padding-top: 6.376vh;
   transition: left 0.3s ease;
   z-index: 999;
 }
 #sidemenu a {
   color: white;
   text-decoration: none;
-  padding: 20px;
+  padding: 2.125vh;
   font-size: 20px;
   text-align: center;
   transition: background-color 0.3s ease;
-  margin-top: 20px;
+  margin-top: 2.125vh;
 }
 #sidemenu a:hover {
   background-color: rgb(85, 85, 85);
@@ -239,7 +239,7 @@ h1 {
   transform: scale(1.3, 1);
 }
 .aboutpage, .contactpage{
-  padding: 20px;
+  padding: 2.125vh;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -265,8 +265,8 @@ h1 {
 .questiontext {
   font-size: 2.2em;
   margin-bottom: 10%;
-  margin-top: 70px;
-  padding: 10px;
+  margin-top: 7.439vh;
+  padding: 1.06vh;
   color: white;
   text-shadow: 2px 2px 8px black;
 }
@@ -279,32 +279,32 @@ h1 {
 }
 .feedback {
   font-size: 2em;
-  height: 50px;
+  height: 5.313vh;
   margin-bottom: 0;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 2.125vh;
+  border-radius: 1.06vh;
 }
 .exp {
   font-size: 1.5em;
   color: black;
   margin-top: 0;
-  height: 90px;
-  border-radius: 10px;
-  padding: 10px;
+  height: 9.564vh;
+  border-radius: 1.06vh;
+  padding: 1.06vh;
 }
 .score {
   font-size: 1.8em;
   color: #1c81ec;
   margin-right: 100%;
-  margin-top: 500px;
+  margin-top: 53.13vh;
   background-color: white;
-  padding: 10px;
+  padding: 1.06vh;
   border-radius: 5px;
-  width: 150px;
-  height: 40px;
+  width: 8.829vw;
+  height: 4.25vh;
 }
 .backbutton {
-  padding: 10px 20px;
+  padding: 1.06vh 1.177vw;
   font-size: 16px;
   font-weight: bold;
   color: white;
@@ -321,25 +321,25 @@ h1 {
   transform: scale(1.05); 
 }
 .inputbar {
-  margin-bottom: 20px;
-  margin-right: 20px;
-  height: 40px;
-  width: 200px;
+  margin-bottom: 2.125vh;
+  margin-right: 1.177vw;
+  height: 4.25vh;
+  width: 11.77vw;
 }
 .checkboxgrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
-  gap: 10px; 
-  max-width: 400px; 
-  margin-left: 225px;
-  margin-bottom: 40px;
+  gap: 1.06vh; 
+  max-width: 23.54vw; 
+  margin-left: 13.24vw;
+  margin-bottom: 4.25vh;
 }
 label {
   display: flex;
   align-items: center;
   gap: 5px; 
-  height: 150px;
-  border-radius: 15px;
+  height: 15.94vh;
+  border-radius: 1.594vh;
   color: white;
   font-size: 25px;
   text-shadow: 2px 2px 8px black;
@@ -351,50 +351,50 @@ label:hover {
   transform: scale(1.05);
 }
 .flag {
-  width: 40px;
-  height: 40px;
+  width: 2.354vw;
+  height: 4.25vh;
   border-radius: 5px;
 }
 .dropside {
   display: grid;
   grid-template-columns: 0.1fr 0.3fr;
-  gap: 20px;
-  width: 200px;
-  height: 120px;
-  margin-top: 20px;
+  gap: 2.125vh;
+  width: 11.77vw;
+  height: 12.75vh;
+  margin-top: 2.125vh;
 }
 .drop-zone {
   background-color: white;
-  width: 40px;
-  height: 40px;
+  width: 2.354vw;
+  height: 4.25vh;
   margin-right: 0;
   border-radius: 5px;
 }
 #flagzone {
-  margin-bottom: 20px;
+  margin-bottom: 2.125vh;
 }
 .flagarea {
-  width: 40px;
+  width: 2.354vw;
   display: grid;
   grid-template-rows: repeat(4, auto);
-  gap: 10px;
-  margin-left: 50px;
-  margin-top: 20px;
+  gap: 1.06vh;
+  margin-left: 2.942vw;
+  margin-top: 2.125vh;
 }
 .draganddrop {
   display: grid;
   grid-template-columns: 0.1fr 0.5fr;
-  gap: 100px;
-  margin-left: 180px;
-  margin-bottom: 50px;
+  gap: 5.885vw;
+  margin-left: 10.59vw;
+  margin-bottom: 5.313vh;
   background-color: rgb(207, 206, 206);
-  border-radius: 10px;
-  width: 450px;
+  border-radius: 1.06vh;
+  width: 26.486vw;
 }
 .countrytag {
   margin-left: 0;
   color: black;
-  width: 150px;
+  width: 8.828vw;
 }
 .europepage h3, .africapage h3, .asiapage h3, .scoretxt {
   color: black;
@@ -406,21 +406,21 @@ label:hover {
 }
 .imagecontour {
   background-color: white;
-  width: 370px;
-  height: 220px;
-  margin-left: 220px;
-  margin-bottom: 50px;
+  width: 21.778vw;
+  height: 23.38vh;
+  margin-left: 12.95vw;
+  margin-bottom: 5.313vh;
 }
 footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 2.125vh;
   position: relative;
   top: 40%;
   width: 100%;
-  height: 200px;
-  left: -20px;
+  height: 21.25vh;
+  left: -1.177vw;
 }
 
 
