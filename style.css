@@ -11,14 +11,16 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center; /* those two */
+  align-items: center;
 }
 .index {
   background-image: url('world-map.jpg');
 }
 h1 {
-  font-size: 2.5em;
+  font-size: clamp(30px, 2.354vw, 45px);
   text-shadow: 2px 2px 4px black;
-  margin-top: 8.5vh;
+  margin-top: 4vh;
 }
 #startbutton, #continents{
   display: flex;
@@ -35,13 +37,13 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 14.71vw;
+  margin-left: clamp(70px, 16.5vw, 300px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 17.66vw;
-  height: 10.63vh;
-  font-size: 25px;
+  width: clamp(150px, 17.66vw, 320px);
+  height: clamp(50px, 10.63vh, 120px);
+  font-size: clamp(16px, 1.471vw, 27px);
   text-shadow: 2px 2px 8px black;
 }
 .quizbutton:hover {
@@ -52,7 +54,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 17.66vw;
+  margin-left: clamp(90px, 19vw, 350px);
   background-color: rgb(68, 127, 228);
 }
 .submitbutton:hover, .accueilbutton:hover{
@@ -70,13 +72,13 @@ h1 {
   margin-bottom: 2.125vh;
 }
 .submitbutton, .accueilbutton {
-  width: 11.77vw;
-  font-size: 18px;
+  width: clamp(100px, 11.77vw, 220px);
+  font-size: clamp(14px, 1.06vw, 20px);
 }
 #continents button {
-  width: 11.77vw;
-  height: 7.44vh;
-  font-size: 19px;
+  width: clamp(100px, 11.77vw, 230px);
+  height: clamp(40px, 7.44vh, 80px);
+  font-size: clamp(13px, 1.1183vw, 20px);
   margin-bottom: 5.313vh;
   text-shadow: 2px 2px 8px black;
   background-size: cover;
@@ -84,9 +86,9 @@ h1 {
   background-repeat: no-repeat;
 }
 #startbutton button {
-  width: 10.3vw;
-  height: 10.6vh;
-  font-size: 20px;
+  width: clamp(80px, 10.3vw, 170px);
+  height: clamp(65px, 10.6vh, 95px);
+  font-size: clamp(13px, 1.177vw, 22px);
 }
 #europebutton {
   background-image: url("europe.jpg");
@@ -109,7 +111,7 @@ h1 {
 }
 .nextbutton {
   padding: 1.594vh 1.883vw;
-  font-size: 27px;
+  font-size: clamp(18px, 1.589vw, 30px);
   font-weight: bold;
   color: white;
   background-color: #1c81ec; 
@@ -149,29 +151,31 @@ h1 {
   background-repeat: no-repeat;
   padding: 1.594vh;
   border-radius: 1.06vh;
-  width: 50%;
+  width: clamp(280px, 50vw, 900px);
   height: 135%;
   position: relative;
-  margin-top: 8%;
+  margin-top: clamp(60px, 14.5vh, 170px);
 }
 #navbar {
   display: flex;
   justify-content: center;
   background-color: rgb(51, 51, 51);
-  padding: 1.275vh;
+  padding: clamp(5px, 1.275vh, 15px);
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
+  height: clamp(35px, 6.376vh, 80px);
 }
 #navbar a {
   color: white;
   text-decoration: none;
-  padding: 1.7vh 1.295vw;
+  padding: clamp(6px, 1.7vh, 19px) clamp(6px, 1.295vw, 25px);
   text-align: center;
-  font-size: 18px;
+  font-size: clamp(7px, 1.06vw, 20px);
   transition: background-color 0.3s color 0.3s;
+  min-width: 0;
 }
 #navbar a:hover {
   background-color: #ddd;
@@ -182,11 +186,19 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 1.765vw;
-  height: 2.55vh;
+  width: clamp(15px, 1.765vw, 35px);
+  height: clamp(10px, 2.55vh, 25px);
   cursor: pointer;
-  margin-right: 78%;
+  margin-right: clamp(100px, 78vw, 1800px);
   margin-top: 1.594vh;
+}
+@media (max-width: 600px) {
+  #navtext {
+    margin-right: clamp(20px, 15vw, 900px) !important;
+  }
+  #hamburger {
+    margin-right: clamp(20px, 60vw, 450px) !important;
+  }
 }
 #hamburger:hover .bar {
   transform: scaleX(0.7);
@@ -202,8 +214,8 @@ h1 {
   flex-direction: column;
   position: fixed;
   top: 0;
-  left: -14.71vw;
-  width: 14.71vw;
+  left: clamp(-300px, -14.71vw, -100px);
+  width: clamp(100px, 14.71vw, 300px);
   height: 100%;
   background-color: black;
   padding-top: 6.376vh;
@@ -214,7 +226,7 @@ h1 {
   color: white;
   text-decoration: none;
   padding: 2.125vh;
-  font-size: 20px;
+  font-size: clamp(16px, 1.177vw, 24px);
   text-align: center;
   transition: background-color 0.3s ease;
   margin-top: 2.125vh;
@@ -232,8 +244,8 @@ h1 {
   color: white;
   position: absolute;
   font-family: 'Lobster', cursive;
-  font-size: 45px;
-  margin-right: 50%;
+  font-size: clamp(25px, 2.249vw, 50px);
+  margin-right: clamp(20px, 50vw, 900px);
   margin-top: -4px;
   display: inline-block;
   transform: scale(1.3, 1);
@@ -253,17 +265,17 @@ h1 {
   background-image: url('world-map.jpg')
 }
 .aboutpage h2 {
-  font-size: 4em;
+  font-size: clamp(30px, 2.825vw, 50px);
   margin-bottom: 15%;
   color: white;
 }
 .contactpage h2 {
-  font-size: 4em;
+  font-size: clamp(30px, 2.825vw, 50px);
   color: white;
   margin-bottom: 20%
 }
 .questiontext {
-  font-size: 2.2em;
+  font-size: clamp(20px, 2.072vw, 40px);
   margin-bottom: 10%;
   margin-top: 7.439vh;
   padding: 1.06vh;
@@ -271,41 +283,41 @@ h1 {
   text-shadow: 2px 2px 8px black;
 }
 .info {
-  font-size: 1.5em;
+  font-size: clamp(16px, 1.413vw, 28px);
   color: white;
   margin-bottom: 10%;
   text-align: left;
   text-shadow: 2px 2px 8px black;
 }
 .feedback {
-  font-size: 2em;
-  height: 5.313vh;
+  font-size: clamp(20px, 1.883vw, 36px);
+  height: clamp(35px, 5.313vh, 55px);
   margin-bottom: 0;
   padding: 2.125vh;
   border-radius: 1.06vh;
 }
 .exp {
-  font-size: 1.5em;
+  font-size: clamp(18px, 1.4125vw, 28px);
   color: black;
   margin-top: 0;
-  height: 9.564vh;
+  height: clamp(70px, 9.564vh, 100px);
   border-radius: 1.06vh;
   padding: 1.06vh;
 }
 .score {
-  font-size: 1.8em;
+  font-size: clamp(20px, 1.695vw, 32px);
   color: #1c81ec;
   margin-right: 100%;
   margin-top: 53.13vh;
   background-color: white;
   padding: 1.06vh;
   border-radius: 5px;
-  width: 8.829vw;
-  height: 4.25vh;
+  width: clamp(90px, 8.829vw, 180px);
+  height: clamp(20px, 4.25vh, 50px);
 }
 .backbutton {
   padding: 1.06vh 1.177vw;
-  font-size: 16px;
+  font-size: clamp(10px, 0.94vw, 20px);
   font-weight: bold;
   color: white;
   background-color: #007BFF; 
@@ -314,7 +326,34 @@ h1 {
   cursor: pointer;
   transition: all 0.3s ease;
   margin-right: 75%;
-  margin-top: 30%;
+}
+#abtbtn {
+  margin-top: clamp(50px, 40vh, 600px);
+}
+@media (min-width: 1800px) {
+  #abtbtn {
+    margin-top: clamp(200px, 75vh, 700px);
+  }
+}
+@media (max-width: 700px) {
+  #ctcbtn {
+    margin-bottom: clamp(10px, 5vh, 100px);
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  #ctcbtn {
+    margin-top: clamp(50px, 10vh, 400px);
+  }
+}
+@media (min-width: 1200px) and (max-width: 1800px) {
+  #ctcbtn {
+    margin-top: clamp(50px, 30vh, 700px);
+  }
+}
+@media (min-width: 1800px) {
+  #ctcbtn {
+    margin-top: clamp(50px, 85vh, 1000px);
+  }
 }
 .backbutton:hover, .nextbutton:hover {
   background-color: #0056b3;
@@ -322,26 +361,42 @@ h1 {
 }
 .inputbar {
   margin-bottom: 2.125vh;
-  margin-right: 1.177vw;
-  height: 4.25vh;
-  width: 11.77vw;
+  /*margin-right: clamp(1px, 1vw, 50px);*/
+  /*margin-left: clamp(1px, 5vw, 100px);*/
+  height: clamp(20px, 4.25vh, 50px);
+  width: clamp(140px, 13vw, 250px);
+}
+@media (min-width: 800px) and (max-width: 2000px) {
+  .inputbar {
+    margin-left: 0;
+  }
+}
+@media (min-width: 2000px) or ((max-width: 800px) and (min-width: 700px)) {
+  .inputbar {
+    margin-left: clamp(1px, 0.5vw, 100px);
+  }
 }
 .checkboxgrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 1.06vh; 
-  max-width: 23.54vw; 
-  margin-left: 13.24vw;
+  max-width: clamp(250px, 23.54vw, 420px); 
+  margin-left: clamp(10px, 13vw, 250px);
   margin-bottom: 4.25vh;
+}
+@media (max-width: 800px) {
+  .checkboxgrid {
+    margin-left: clamp(10px, 9.5vw, 100px);
+  }
 }
 label {
   display: flex;
   align-items: center;
   gap: 5px; 
-  height: 15.94vh;
+  height: clamp(80px, 15.94vh, 180px);
   border-radius: 1.594vh;
   color: white;
-  font-size: 25px;
+  font-size: clamp(17px, 1.471vh, 28px);
   text-shadow: 2px 2px 8px black;
   background-size: cover;
   background-position: center;
@@ -351,65 +406,86 @@ label:hover {
   transform: scale(1.05);
 }
 .flag {
-  width: 2.354vw;
-  height: 4.25vh;
+  width: clamp(35px, 2.354vw, 50px);
+  height: clamp(35px, 4.25vh, 50px);
   border-radius: 5px;
 }
 .dropside {
   display: grid;
   grid-template-columns: 0.1fr 0.3fr;
   gap: 2.125vh;
-  width: 11.77vw;
-  height: 12.75vh;
+  width: clamp(100px, 11.77vw, 240px);
+  height: clamp(70px, 12.75vh, 150px);
   margin-top: 2.125vh;
 }
 .drop-zone {
   background-color: white;
-  width: 2.354vw;
-  height: 4.25vh;
+  width: clamp(35px, 2.354vw, 50px);
+  height: clamp(35px, 4.25vh, 50px);
   margin-right: 0;
   border-radius: 5px;
 }
 #flagzone {
-  margin-bottom: 2.125vh;
+  margin-bottom: clamp(10px, 2.125vh, 30px);
 }
 .flagarea {
-  width: 2.354vw;
+  width: clamp(35px, 2.354vw, 50px);
   display: grid;
   grid-template-rows: repeat(4, auto);
-  gap: 1.06vh;
+  /*gap: 1.06vh;*/
   margin-left: 2.942vw;
   margin-top: 2.125vh;
 }
 .draganddrop {
   display: grid;
   grid-template-columns: 0.1fr 0.5fr;
-  gap: 5.885vw;
-  margin-left: 10.59vw;
+  gap: clamp(40px, 4.5vw, 120px);
+  margin-left: 11vw;
   margin-bottom: 5.313vh;
   background-color: rgb(207, 206, 206);
   border-radius: 1.06vh;
-  width: 26.486vw;
+  width: clamp(285px, 27vw, 500px);
+}
+@media (max-width: 700px) {
+  .draganddrop {
+    margin-left: clamp(10px, 3vw, 100px);
+  }
+}
+@media (max-width: 900px) and (min-width: 700px) {
+  .draganddrop {
+    margin-left: clamp(10px, 7vw, 100px);
+  }
+}
+@media (min-width: 1800px) {
+  .draganddrop {
+    margin-left: clamp(10px, 8.5vw, 300px);
+  }
 }
 .countrytag {
   margin-left: 0;
   color: black;
-  width: 8.828vw;
+  width: clamp(120px, 8.828vw, 200px);
+  font-size: clamp(12px, 0.5vw, 20px);
 }
 .europepage h3, .africapage h3, .asiapage h3, .scoretxt {
   color: black;
-  font-size: 2.5em;
+  font-size: clamp(20px, 2.354vw, 50px);
 }
 .finishtxt {
   color: black;
-  font-size: 1.5em
+  font-size: clamp(16px, 1.4125vw, 28px);
 }
 .imagecontour {
   background-color: white;
-  width: 21.778vw;
-  height: 23.38vh;
-  margin-left: 12.95vw;
+  width: clamp(200px, 21.778vw, 410px);
+  height: clamp(110px, 23.38vh, 250px);
+  margin-left: clamp(40px, 14vw, 240px);
   margin-bottom: 5.313vh;
+}
+@media (max-width: 800px) {
+  .imagecontour {
+    margin-left: clamp(50px, 12.5vw, 120px);
+  }
 }
 footer {
   background-color: black;
@@ -418,11 +494,14 @@ footer {
   padding: 2.125vh;
   position: relative;
   top: 40%;
-  width: 100%;
+  width: 100vw;
   height: 21.25vh;
-  left: -1.177vw;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 
 
 

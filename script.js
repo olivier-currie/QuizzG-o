@@ -162,7 +162,7 @@ class ImageInput extends InputQuestion {
     return `<div>
                 <p class="questiontext">${this.text}</p>
                 <div class="imagecontour">
-                    <img src=${this.image} style="margin-top: 10px; width: 20.6vw; height: 21.25vh;">
+                    <img src=${this.image} style="margin-top: 10px; width: clamp(190px, 20.6vw, 400px); height: clamp(120px, 21.25vh, 260px);">
                 </div>
                 <p></p>
                 <input type="text" class="inputbar" id="answerId" />
@@ -559,7 +559,7 @@ function endQuiz(qbid, name) {
   const minutes = Math.floor(timeDifference / 60000);
   const seconds = Math.floor((timeDifference % 60000) / 1000);
   qb.style.backgroundColor = "white";
-  qb.style.marginTop = "20%";
+  qb.style.marginTop = "clamp(80px, 20vh, 200px)";
   qb.innerHTML = `<h3>Vous avez terminé le quiz sur l'${name}!</h3>
                   <p class="finishtxt">Votre score est: </p>
                   <p></p>
