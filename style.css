@@ -502,12 +502,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-@supports (-webkit-touch-callout: none) {
-  .body, .europepage, .africapage, .asiapage, .aboutpage, .contactpage {
-    height: 100vh; /* Fixes Safari's vh issue */
-    overflow: hidden;
-  }
-}
+
 
 
 
