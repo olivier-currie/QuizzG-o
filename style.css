@@ -503,7 +503,7 @@ footer {
   align-items: center;
 }
 @supports (-webkit-touch-callout: none) {
-  .fullscreen-section {
+  .body, .europepage, .africapage, .asiapage, .aboutpage, .contactpage {
     height: 100vh; /* Fixes Safari's vh issue */
     overflow: hidden;
   }
