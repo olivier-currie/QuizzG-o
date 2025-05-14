@@ -54,7 +54,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: clamp(90px, 19vw, 350px);
+  margin-left: clamp(90px, 19vw, 325px);
   background-color: rgb(68, 127, 228);
 }
 .submitbutton:hover, .accueilbutton:hover{
