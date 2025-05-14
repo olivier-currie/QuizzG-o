@@ -156,6 +156,11 @@ h1 {
   position: relative;
   margin-top: clamp(60px, 14.5vh, 170px);
 }
+@media (min-width: 1400px) {
+  .quizzbox {
+    margin-top: clamp(60px, 35vh, 800px);
+  }
+}
 #navbar {
   display: flex;
   justify-content: center;
@@ -314,6 +319,11 @@ h1 {
   border-radius: 5px;
   width: clamp(90px, 8.829vw, 180px);
   height: clamp(20px, 4.25vh, 50px);
+}
+@media (min-width: 1400px) {
+  .score {
+    margin-top: 65vh;
+  }
 }
 .backbutton {
   padding: 1.06vh 1.177vw;
